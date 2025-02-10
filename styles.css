@@ -5,11 +5,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #87CEEB, #4682B4); /* Degradado de azul cielo a azul más oscuro */
 }
 
 .container {
     text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para resaltar el contenido */
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 button {
@@ -22,4 +30,15 @@ button {
 #no {
     position: absolute;
     transition: all 0.2s;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
