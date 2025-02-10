@@ -15,11 +15,18 @@ body {
     background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para resaltar el contenido */
     border-radius: 10px;
     max-width: 100%;
+    position: relative; /* Añadido para asegurar la posición absoluta de los botones */
 }
 
 h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre botones */
 }
 
 button {
@@ -30,7 +37,7 @@ button {
 }
 
 #no {
-    /*position: absolute;*/
+    position: absolute;
     transition: all 0.2s;
 }
 
@@ -46,5 +53,9 @@ button {
 
     .container {
         padding: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
     }
 }
