@@ -30,7 +30,7 @@ button {
 }
 
 #no {
-    position: absolute;
+    /*position: absolute;*/
     transition: all 0.2s;
 }
 
