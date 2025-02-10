@@ -7,7 +7,7 @@ body {
     margin: 0;
     background: linear-gradient(135deg, #87CEEB, #4682B4); /* Degradado de azul cielo a azul más oscuro */
     overflow: hidden; /* Elimina el desplazamiento */
-    position: relative;
+    position: relative; /* Asegura la posición relativa para el botón "No" */
 }
 
 .container {
