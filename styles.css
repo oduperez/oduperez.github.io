@@ -7,6 +7,7 @@ body {
     margin: 0;
     background: linear-gradient(135deg, #87CEEB, #4682B4); /* Degradado de azul cielo a azul más oscuro */
     overflow: hidden; /* Elimina el desplazamiento */
+    position: relative;
 }
 
 .container {
@@ -15,7 +16,6 @@ body {
     background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para resaltar el contenido */
     border-radius: 10px;
     max-width: 100%;
-    position: relative; /* Añadido para asegurar la posición absoluta de los botones */
 }
 
 h2 {
