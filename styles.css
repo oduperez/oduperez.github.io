@@ -8,8 +8,8 @@ body {
             font-family: Arial, sans-serif;
             text-align: center;
             flex-direction: column;
-        }
-        .text-box {
+}
+.text-box {
             background: rgba(255, 255, 255, 0.8);
             padding: 15px;
             border-radius: 15px;
@@ -18,8 +18,8 @@ body {
             margin-bottom: 15px;
             font-size: 1.2em;
             font-weight: bold;
-        }
-        .continue-btn, #yes-btn, #no-btn {
+}
+.continue-btn, #yes-btn, #no-btn {
             padding: 12px 25px;
             border: none;
             border-radius: 15px;
@@ -29,29 +29,39 @@ body {
             color: white;
             margin-top: 20px;
             transition: transform 0.2s, background 0.2s;
-        }
-        .continue-btn:hover, .yes-btn:hover, .no-btn:hover {
+}
+.continue-btn:hover, .yes-btn:hover, .no-btn:hover {
             transform: scale(1.1);
             background: #e84168;
-        }
-        .photos {
+}
+.photos {
             display: flex;
             gap: 15px;
             justify-content: center;
             margin-top: 20px;
-        }
-        .photos img {
+}
+.photos img {
             width: 120px;
             height: 120px;
             border-radius: 20px;
             object-fit: cover;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .final-box {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 80%;
-            margin: auto;
-        }
+}
+.final-box {
+	background: white;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 80%;
+	margin: auto;
+}
+.fade-out {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.5s, transform 0.5s;
+}
+.fade-in {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 0.5s, transform 0.5s;
+}
