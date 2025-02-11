@@ -1,57 +1,59 @@
-body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-            font-family: Arial, sans-serif;
-            text-align: center;
-            flex-direction: column;
-        }
-        .text-box {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 70%;
-            margin-bottom: 15px;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        .continue-btn, .yes-btn, .no-btn {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-            font-size: 18px;
-            background: #ff758c;
-            color: white;
-            margin-top: 20px;
-            transition: transform 0.2s, background 0.2s;
-        }
-        .continue-btn:hover, .yes-btn:hover, .no-btn:hover {
-            transform: scale(1.1);
-            background: #e84168;
-        }
-        .photos {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .photos img {
-            width: 120px;
-            height: 120px;
-            border-radius: 20px;
-            object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .final-box {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 80%;
-            margin: auto;
-        }
+const stages = [
+            "No sabes lo feliz que me hace estar aquí contigo esta noche.",
+            "Déjame decirte... Hoy estás espectacular, pero es que lo eres cada día.",
+            "Gracias por compartir estos meses conmigo, cada momento es único.",
+            "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
+            "Y pensar en todo lo que nos espera... ¡Va a ser increíble! 😉.",
+            "Después de todo esto, hay algo que quiero preguntarte de corazón...",
+            "Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?"
+        ];
+
+        const images = [
+            ["img/foto_1.jpg", "img/foto_2.jpg"],
+            ["img/foto_3.jpg", "img/foto_4.jpg"],
+            ["img/foto_5.jpg", "img/foto_6.jpg"],
+            ["img/foto_7.jpg", "img/foto_8.jpg"],
+            ["img/foto_9.jpg", "img/foto_10.jpg"],
+            ["img/foto_11.jpg", "img/foto_12.jpg"],
+            []
+        ];
+
+        let stageIndex = 0;
+        const stageText = document.getElementById("stage-text");
+        const continueBtn = document.getElementById("continue-btn");
+        const photoContainer = document.getElementById("photo-container");
+        
+        continueBtn.addEventListener("click", function() {
+            stageIndex++;
+            if (stageIndex < stages.length - 1) {
+                stageText.textContent = stages[stageIndex];
+                photoContainer.innerHTML = images[stageIndex].map(src => `<img src="${src}" alt="Foto">`).join("");
+            } else {
+                document.body.innerHTML = `
+                    <div class="final-box">
+                        <p id="question">Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?</p>
+                        <div class="buttons">
+                            <button class="yes-btn" id="yes-btn">Sí</button>
+                            <button class="no-btn" id="no-btn">No</button>
+                        </div>
+                    </div>
+                `;
+                const noBtn = document.getElementById("no-btn");
+                let noClickCount = 0;
+                
+                noBtn.addEventListener("click", function() {
+                    noClickCount++;
+                    if (noClickCount >= 2) {
+                        noBtn.textContent = "No 😠";
+                    } else {
+                        noBtn.style.position = "absolute";
+                        noBtn.style.left = Math.random() * 50 + "%";
+                        noBtn.style.top = Math.random() * 50 + "%";
+                    }
+                });
+
+                document.getElementById("yes-btn").addEventListener("click", function() {
+                    document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
+                });
+            }
+        });
