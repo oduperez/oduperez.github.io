@@ -50,25 +50,26 @@ continueBtn.addEventListener("click", function() {
       `;
     }
   }, 1000);
-  
-  const noBtn = document.getElementById("no-btn");
-  let noClickCount = 0;
-                
-  noBtn.addEventListener("click", function() {
-    noClickCount++;
-    if (noClickCount >= 2) {
-      noBtn.textContent = "No 😠";
-      noBtn.style.position = "absolute";
-      noBtn.style.left = Math.random() * 50 + "%";
-      noBtn.style.top = Math.random() * 50 + "%";
-    } else {
-      noBtn.style.position = "absolute";
-      noBtn.style.left = Math.random() * 50 + "%";
-      noBtn.style.top = Math.random() * 50 + "%";
-    }
-  });
-
-  document.getElementById("yes-btn").addEventListener("click", function() {
-    document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
-  });
 });
+  
+const noBtn = document.getElementById("no-btn");
+let noClickCount = 0;
+                
+noBtn.addEventListener("click", function() {
+  noClickCount++;
+  if (noClickCount >= 2) {
+    noBtn.textContent = "No 😠";
+    noBtn.style.position = "absolute";
+    noBtn.style.left = Math.random() * 50 + "%";
+    noBtn.style.top = Math.random() * 50 + "%";
+  } else {
+    noBtn.style.position = "absolute";
+    noBtn.style.left = Math.random() * 50 + "%";
+    noBtn.style.top = Math.random() * 50 + "%";
+  }
+});
+
+document.getElementById("yes-btn").addEventListener("click", function() {
+  document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
+});
+
