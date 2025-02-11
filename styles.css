@@ -19,7 +19,7 @@ body {
             font-size: 1.2em;
             font-weight: bold;
         }
-        .continue-btn, .yes-btn, .no-btn {
+        .continue-btn, #yes-btn, #no-btn {
             padding: 12px 25px;
             border: none;
             border-radius: 15px;
