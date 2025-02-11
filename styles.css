@@ -7,6 +7,7 @@ body {
     margin: 0;
     background: linear-gradient(135deg, #87CEEB, #4682B4); /* Degradado de azul cielo a azul más oscuro */
     overflow: hidden; /* Elimina el desplazamiento */
+    position: relative;
 }
 
 .container {
@@ -22,20 +23,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-#movement-area {
-    width: 70%;
-    height: 70%;
-    position: relative;
-    margin: auto;
-}
-
 .button-container {
     display: flex;
     justify-content: center;
     gap: 20px; /* Espacio entre botones */
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 button {
@@ -48,6 +40,10 @@ button {
 #no {
     position: absolute;
     transition: all 0.2s;
+}
+
+#si {
+    position: relative; /* Asegura que el botón "Sí" se mantenga en su lugar */
 }
 
 @media (max-width: 600px) {
@@ -66,10 +62,5 @@ button {
 
     .button-container {
         flex-direction: column;
-    }
-
-    #movement-area {
-        width: 100%;
-        height: 100%;
     }
 }
