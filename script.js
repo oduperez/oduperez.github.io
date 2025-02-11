@@ -29,7 +29,7 @@ const stages = [
                 stageText.textContent = stages[stageIndex];
                 photoContainer.innerHTML = images[stageIndex].map(src => `<img src="${src}" alt="Foto">`).join("");
             } else {
-                document.getElementById("stage-box").innerHTML = `
+                stageText.innerHTML = `
                     <p id="question">Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?</p>
                     <div class="buttons">
                         <button id="yes-btn">Sí</button>
