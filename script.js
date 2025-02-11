@@ -26,6 +26,7 @@ const photoContainer = document.getElementById("photo-container");
 continueBtn.addEventListener("click", function() {
   stageText.classList.add("fade-out");
   photoContainer.classList.add("fade-out");
+  continueBtn.classList.add("fade-out");
 
   setTimeout(() => {
     stageIndex++;
@@ -34,8 +35,10 @@ continueBtn.addEventListener("click", function() {
       photoContainer.innerHTML = images[stageIndex].map(src => `<img src="${src}" alt="Foto">`).join("");
       stageText.classList.remove("fade-out");
       photoContainer.classList.remove("fade-out");
+      continueBtn.classList.remove("fade-out");
       stageText.classList.add("fade-in");
       photoContainer.classList.add("fade-in");
+      continueBtn.classList.add("fade-in");
     } else {
       continueBtn.style.display = "none"; // Ocultar botón continuar
       stageText.innerHTML = `
@@ -45,23 +48,27 @@ continueBtn.addEventListener("click", function() {
         <button id="no-btn">No</button>
         </div>
       `;
-      const noBtn = document.getElementById("no-btn");
-      let noClickCount = 0;
+    }, 1000);
+  
+    const noBtn = document.getElementById("no-btn");
+    let noClickCount = 0;
                 
-      noBtn.addEventListener("click", function() {
-        noClickCount++;
-        if (noClickCount >= 2) {
-          noBtn.textContent = "No 😠";
-        } else {
-          noBtn.style.position = "absolute";
-          noBtn.style.left = Math.random() * 50 + "%";
-          noBtn.style.top = Math.random() * 50 + "%";
-        }
-      });
+    noBtn.addEventListener("click", function() {
+      noClickCount++;
+      if (noClickCount >= 2) {
+        noBtn.textContent = "No 😠";
+        noBtn.style.position = "absolute";
+        noBtn.style.left = Math.random() * 50 + "%";
+        noBtn.style.top = Math.random() * 50 + "%";
+      } else {
+        noBtn.style.position = "absolute";
+        noBtn.style.left = Math.random() * 50 + "%";
+        noBtn.style.top = Math.random() * 50 + "%";
+      }
+    });
 
-      document.getElementById("yes-btn").addEventListener("click", function() {
-        document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
-      });
-    }
-  }, 500);
+    document.getElementById("yes-btn").addEventListener("click", function() {
+      document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
+    });
+  }
 });
