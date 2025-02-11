@@ -6,51 +6,43 @@ body {
             height: 100vh;
             background: linear-gradient(45deg, #ff9a9e, #fad0c4);
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         .container {
             text-align: center;
         }
-        .question-box {
+        .message-box {
             background: white;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            margin: auto;
         }
         .buttons {
             margin-top: 15px;
         }
-        button {
+        .continue-btn {
             padding: 10px 20px;
-            margin: 5px;
             border: none;
             border-radius: 10px;
             cursor: pointer;
             font-size: 16px;
-        }
-        #yes-btn {
             background: #ff758c;
             color: white;
         }
-        #no-btn {
-            background: #dcdcdc;
-            color: black;
-            position: relative;
-        }
         .hidden {
             display: none;
-        }
-        .collage-text {
-            font-size: 18px;
-            margin-bottom: 10px;
         }
         .photos {
             display: flex;
             gap: 10px;
             justify-content: center;
+            margin-top: 15px;
         }
         .photos img {
             width: 80px;
             height: 80px;
-            border-radius: 10px;
+            border-radius: 15px;
             object-fit: cover;
         }
