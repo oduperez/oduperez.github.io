@@ -1,19 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    function aceptar() {
-        alert('¡Gracias por aceptar!');
-    }
-
-    function moverBoton() {
-        var botonNo = document.getElementById('no');
-        var movementArea = document.querySelector('body'); // Área de movimiento
-        var maxX = movementArea.clientWidth - botonNo.offsetWidth;
-        var maxY = movementArea.clientHeight - botonNo.offsetHeight;
-        var x = Math.floor(Math.random() * maxX);
-        var y = Math.floor(Math.random() * maxY);
-        botonNo.style.left = x + 'px';
-        botonNo.style.top = y + 'px';
-    }
-
-    document.getElementById('si').onclick = aceptar;
-    document.getElementById('no').onclick = moverBoton;
-});
+let noClickCount = 0;
+        const noBtn = document.getElementById("no-btn");
+        const yesBtn = document.getElementById("yes-btn");
+        const questionBox = document.getElementById("question-box");
+        const collage = document.getElementById("collage");
+        
+        noBtn.addEventListener("click", function() {
+            noClickCount++;
+            if (noClickCount >= 3) {
+                noBtn.textContent = "😠";
+            } else {
+                noBtn.style.top = Math.random() * 50 + "px";
+                noBtn.style.left = Math.random() * 50 + "px";
+            }
+        });
+        
+        yesBtn.addEventListener("click", function() {
+            questionBox.classList.add("hidden");
+            collage.classList.remove("hidden");
+        });
