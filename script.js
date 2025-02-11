@@ -72,7 +72,3 @@ continueBtn.addEventListener("click", function() {
     }
   }, 1000);
 });
-
-document.getElementById("yes-btn").addEventListener("click", function() {
-  document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
-});
