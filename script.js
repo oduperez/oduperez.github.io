@@ -71,4 +71,7 @@ continueBtn.addEventListener("click", function() {
       });
     }
   }, 1000);
+  stageText.classList.remove("fade-in");
+  photoContainer.classList.remove("fade-in");
+  continueBtn.classList.remove("fade-in");
 });
