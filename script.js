@@ -41,6 +41,9 @@ continueBtn.addEventListener("click", function() {
       continueBtn.classList.add("fade-in");
     } else {
       continueBtn.style.display = "none"; // Ocultar botón continuar
+      stageText.classList.remove("fade-out");
+      photoContainer.classList.remove("fade-out");
+      continueBtn.classList.remove("fade-out");
       stageText.innerHTML = `
         <p id="question">Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?</p>
         <div class="buttons">
@@ -48,6 +51,7 @@ continueBtn.addEventListener("click", function() {
         <button id="no-btn">No</button>
         </div>
       `;
+      stageText.classList.add("fade-in");
       // Ahora que los botones existen en el DOM, añadimos los eventos
       const noBtn = document.getElementById("no-btn");
       const yesBtn = document.getElementById("yes-btn");
