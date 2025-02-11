@@ -1,11 +1,11 @@
 const stages = [
-            "Gracias por estar hoy cenando conmigo.",
-            "Estás increíble, impresionante y guapísima esta noche.",
-            "Gracias por ser mi acompañante estos meses, han sido increíbles.",
-            "Gracias por todos los planes que hemos hecho juntos.",
-            "Gracias por todos los planes que haremos juntos 😉.",
-            "Por todo esto y todo lo que nos queda juntos... quiero hacerte una propuesta bonita.",
-            "¿Quieres ser mi novia?"
+            "No sabes lo feliz que me hace estar aquí contigo esta noche.",
+            "Déjame decirte... Hoy estás espectacular, pero es que lo eres cada día.",
+            "Gracias por compartir estos meses conmigo, cada momento es único.",
+            "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
+            "Y pensar en todo lo que nos espera... ¡Va a ser increíble! 😉.",
+            "Después de todo esto, hay algo que quiero preguntarte de corazón...",
+            "Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?"
         ];
 
         const images = [
@@ -30,17 +30,28 @@ const stages = [
                 photoContainer.innerHTML = images[stageIndex].map(src => `<img src="${src}" alt="Foto">`).join("");
             } else {
                 document.getElementById("stage-box").innerHTML = `
-                    <p id="question">¿Quieres ser mi novia?</p>
+                    <p id="question">Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?</p>
                     <div class="buttons">
                         <button id="yes-btn">Sí</button>
                         <button id="no-btn">No</button>
                     </div>
                 `;
+                const noBtn = document.getElementById("no-btn");
+                let noClickCount = 0;
+                
+                noBtn.addEventListener("click", function() {
+                    noClickCount++;
+                    if (noClickCount >= 2) {
+                        noBtn.textContent = "No 😠";
+                    } else {
+                        noBtn.style.position = "absolute";
+                        noBtn.style.left = Math.random() * 50 + "%";
+                        noBtn.style.top = Math.random() * 50 + "%";
+                    }
+                });
+
                 document.getElementById("yes-btn").addEventListener("click", function() {
                     document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
-                });
-                document.getElementById("no-btn").addEventListener("click", function() {
-                    alert("¡No puede ser! Piénsalo bien 😢");
                 });
             }
         });
