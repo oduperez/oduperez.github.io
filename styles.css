@@ -1,66 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #87CEEB, #4682B4); /* Degradado de azul cielo a azul más oscuro */
-    overflow: hidden; /* Elimina el desplazamiento */
-    position: relative;
-}
-
-.container {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para resaltar el contenido */
-    border-radius: 10px;
-    max-width: 100%;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espacio entre botones */
-    position: relative;
-}
-
-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-#no {
-    position: absolute;
-    transition: all 0.2s;
-}
-
-#si {
-    position: relative; /* Asegura que el botón "Sí" se mantenga en su lugar */
-}
-
-@media (max-width: 600px) {
-    h2 {
-        font-size: 1.2em;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .button-container {
-        flex-direction: column;
-    }
-}
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .question-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #yes-btn {
+            background: #ff758c;
+            color: white;
+        }
+        #no-btn {
+            background: #dcdcdc;
+            color: black;
+            position: relative;
+        }
+        .hidden {
+            display: none;
+        }
+        .collage-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .photos {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .photos img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
