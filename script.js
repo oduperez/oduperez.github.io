@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
         
 continueBtn.addEventListener("click", function() {
+  stageText.classList.remove("fade-in");
+  photoContainer.classList.remove("fade-in");
+  continueBtn.classList.remove("fade-in");
   // 1. Ocultar solo las imágenes primero
   photoContainer.classList.add("fade-out");
 
@@ -111,12 +114,5 @@ continueBtn.addEventListener("click", function() {
         document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
       });
     }
-  //}, 800);
-  
-  // Eliminar fade-in para prepararse para la siguiente aparición
-  setTimeout(() => {
-    stageText.classList.remove("fade-in");
-    photoContainer.classList.remove("fade-in");
-    continueBtn.classList.remove("fade-in");
-  }, 800);
+  //}, 800);    
 });
