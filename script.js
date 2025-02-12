@@ -11,9 +11,9 @@ const stages = [
 
 const images = [
   ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],
-  ["img/IMG_8039.jpeg", "img/medusas.jpeg"],
+  ["img/IMG_8039.jpeg", "img/multa.jpeg"],
   ["img/graduacion.jpeg", "img/playa.jpeg"],
-  ["img/multa.jpeg", "img/yo_cenando.jpeg"],
+  ["img/medusas.jpeg", "img/yo_cenando.jpeg"],
   ["img/IMG_8100.jpeg", "img/IMG_7360.jpeg"],
   ["img/torneo_juntos.jpeg", "img/rio.jpeg"],
   ["img/IMG_8304.jpeg", "img/cena_sushi.jpeg"],
