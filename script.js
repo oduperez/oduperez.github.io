@@ -7,7 +7,7 @@ const stages = [
   "¿Qué cabría esperar de un compañero de aventuras como yo? Bueno, tal vez alguien que disfruta de lo inesperado, como un fascinante acuario de medusas. Pero, no te preocupes, ¡también sé cuándo sorprenderte con algo menos raro!",
   "No me veo capaz de encontrar algo que ilumine más mi navidad que tú Copi.",
   "Me apoyas en lo que amo y, juntos, seguimos explorando nuevos horizontes, siempre con una sonrisa (y un tanque de oxígeno 🤿)",
-  "Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?"
+  "Por todo lo vivido y lo que nos queda que vivir... ¿Quieres ser mi Novia?"
 ];
 
 const images = [
