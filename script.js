@@ -1,6 +1,6 @@
 const stages = [
   //"No sabes lo feliz que me hace estar aquí contigo esta noche.",
-  "En la simplicidad de pequeños momentos y detalles, encontramos nuestra magia. Cada estrella en el cielo y cada atardecer inmortalizado nos recuerda las veces que nos hemos dedicado uno al otro.\nGracias por llenar mi vida de luz con cada gesto y cada recuerdo compartido.",
+  "En la simplicidad de pequeños momentos y detalles, encontramos nuestra magia. Cada estrella en el cielo y cada atardecer inmortalizado nos recuerda las veces que nos hemos dedicado uno al otro.<br>Gracias por llenar mi vida de luz con cada gesto y cada recuerdo compartido.",
   "Déjame decirte... Hoy estás espectacular, pero es que lo eres cada día.",
   "Gracias por compartir estos meses conmigo, cada momento es único.",
   "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
