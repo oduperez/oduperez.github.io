@@ -46,13 +46,15 @@ continueBtn.addEventListener("click", function() {
     // 2. Luego ocultar el texto y el botón
     stageText.classList.add("fade-out");
     continueBtn.classList.add("fade-out");
-  }, 200); // Un pequeño retraso para que primero desaparezcan las imágenes
+  }, 600); // Un pequeño retraso para que primero desaparezcan las imágenes
 
   setTimeout(() => {
     stageIndex++;
     if (stageIndex < stages.length - 1) {
       // 3. Cambiar las imágenes en el DOM
-      photoContainer.innerHTML = images[stageIndex].map(src => `<img src="${src}" alt="Foto">`).join("");
+      setTimeout(() => {
+        photoContainer.innerHTML = images[stageIndex].map(src => `<img src="${src}" alt="Foto">`).join("");
+      }, 200);
       
       // 4. Cambiar el texto en el DOM
       stageText.textContent = stages[stageIndex];
@@ -65,7 +67,6 @@ continueBtn.addEventListener("click", function() {
 
       // 6. Esperar antes de hacer aparecer las imágenes nuevas
       setTimeout(() => {
-        //document.querySelectorAll(".hidden-img").forEach(img => img.classList.remove("hidden-img"));
         photoContainer.classList.remove("fade-out");
         photoContainer.classList.add("fade-in");
       }, 300); // Permitir que el texto aparezca antes de mostrar las fotos
