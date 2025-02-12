@@ -99,7 +99,7 @@ continueBtn.addEventListener("click", function() {
         if ((noClickCount >= 2) && (noClickCount <= 4)) {
           noBtn.textContent = "No 😠";
           noBtn.classList.add("bad-btn");
-        }else if(noClickCount > 4){
+        }else if(noClickCount == 5){
           alert('Pero a que juegas nena...!?🤬')
         }else if(noClickCount > 5){
           alert('Yo tampoco quería en realidad...😒')
