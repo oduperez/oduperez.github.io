@@ -81,7 +81,7 @@ continueBtn.addEventListener("click", function() {
       photoContainer.classList.remove("fade-out");
       continueBtn.classList.remove("fade-out");
       stageText.innerHTML = `
-        <p id="question">Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?</p>
+        <p id="question">Por todo lo vivido y lo que nos queda que vivir... ¿Quieres ser mi Compañera de aventuras / Novia?</p>
         <div class="buttons">
         <button id="yes-btn">Sí</button>
         <button id="no-btn">No</button>
