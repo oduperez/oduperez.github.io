@@ -1,5 +1,6 @@
 const stages = [
-  "No sabes lo feliz que me hace estar aquí contigo esta noche.",
+  //"No sabes lo feliz que me hace estar aquí contigo esta noche.",
+  "",
   "Déjame decirte... Hoy estás espectacular, pero es que lo eres cada día.",
   "Gracias por compartir estos meses conmigo, cada momento es único.",
   "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
@@ -10,13 +11,13 @@ const stages = [
 ];
 
 const images = [
-  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],
-  ["img/IMG_8039.jpeg", "img/multa.jpeg"],
-  ["img/graduacion.jpeg", "img/playa.jpeg"],
-  ["img/medusas.jpeg", "img/yo_cenando.jpeg"],
-  ["img/IMG_8100.jpeg", "img/IMG_7360.jpeg"],
-  ["img/torneo_juntos.jpeg", "img/rio.jpeg"],
-  ["img/IMG_8304.jpeg", "img/cena_sushi.jpeg"],
+  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],   // PAISAJES
+  ["img/IMG_8039.jpeg", "img/multa.jpeg"],             // ANIMAL + MULTA
+  ["img/graduacion.jpeg", "img/playa.jpeg"],           // GRADUACION + PLAYA
+  ["img/medusas.jpeg", "img/yo_cenando.jpeg"],         // MEDUSA + YO
+  ["img/IMG_8100.jpeg", "img/IMG_7360.jpeg"],          // SETAS + HELADERIA
+  ["img/torneo_juntos.jpeg", "img/rio.jpeg"],          // HOBBIES
+  ["img/IMG_8304.jpeg", "img/cena_sushi.jpeg"],        // NAVIDAD
   []
 ];
 
@@ -98,9 +99,9 @@ continueBtn.addEventListener("click", function() {
         if ((noClickCount >= 2) && (noClickCount <= 4)) {
           noBtn.textContent = "No 😠";
           noBtn.classList.add("bad-btn");
-        }if else(noClickCount > 4){
+        }else if(noClickCount > 4){
           alert('Pero a que juegas nena...!?🤬')
-        }if else(noClickCount > 6){
+        }else if(noClickCount > 6){
           alert('Yo tampoco quería en realidad...😒')
         }
         noBtn.style.left = Math.random() * 50 + "%";
