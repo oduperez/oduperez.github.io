@@ -42,10 +42,12 @@ continueBtn.addEventListener("click", function() {
   // 1. Ocultar solo las imágenes primero
   photoContainer.classList.add("fade-out");
 
-  // 2. Luego ocultar el texto y el botón
-  stageText.classList.add("fade-out");
-  continueBtn.classList.add("fade-out");
-
+  setTimeout(() => {
+    // 2. Luego ocultar el texto y el botón
+    stageText.classList.add("fade-out");
+    continueBtn.classList.add("fade-out");
+  }, 400); // Un pequeño retraso para que primero desaparezcan las imágenes
+  
   setTimeout(() => {
     stageIndex++;
     if (stageIndex < stages.length - 1) {
