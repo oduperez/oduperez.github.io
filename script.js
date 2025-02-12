@@ -24,6 +24,8 @@ let stageIndex = 0;
 const stageText = document.getElementById("stage-text");
 const continueBtn = document.getElementById("continue-btn");
 const photoContainer = document.getElementById("photo-container");
+const photo1 = document.getElementById("foto_1");
+const photo2 = document.getElementById("foto_2");
 
 document.addEventListener("DOMContentLoaded", function() {
   const loginScreen = document.getElementById("login-screen");
@@ -43,7 +45,9 @@ continueBtn.addEventListener("click", function() {
   photoContainer.classList.remove("fade-in");
   continueBtn.classList.remove("fade-in");
   // 1. Ocultar solo las imágenes primero
-  photoContainer.classList.add("fade-out");
+  //photoContainer.classList.add("fade-out");
+  photo1.classList.add("fade-out");
+  photo2.classList.add("fade-out");
 
   setTimeout(() => {
     // 2. Luego ocultar el texto y el botón
@@ -68,8 +72,12 @@ continueBtn.addEventListener("click", function() {
 
       // 6. Esperar antes de hacer aparecer las imágenes nuevas
       setTimeout(() => {
-        photoContainer.classList.remove("fade-out");
-        photoContainer.classList.add("fade-in");
+        //photoContainer.classList.remove("fade-out");
+        photo1.classList.remove("fade-out");
+        photo2.classList.remove("fade-out");
+        //photoContainer.classList.add("fade-in");
+        photo1.classList.add("fade-in");
+        photo2.classList.add("fade-in");
       }, 800); // Permitir que el texto aparezca antes de mostrar las fotos
       
     } else {
