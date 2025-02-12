@@ -22,6 +22,19 @@ let stageIndex = 0;
 const stageText = document.getElementById("stage-text");
 const continueBtn = document.getElementById("continue-btn");
 const photoContainer = document.getElementById("photo-container");
+
+document.addEventListener("DOMContentLoaded", function() {
+  const loginScreen = document.getElementById("login-screen");
+  const storyContent = document.getElementById("story-content");
+  const profilePic = document.getElementById("profile-pic");
+  
+  profilePic.addEventListener("click", function() {
+    loginScreen.style.display = "none";
+    storyContent.style.display = "flex";
+    storyContent.style.flexDirection = "column";
+    storyContent.style.alignItems = "center";
+  });
+});
         
 continueBtn.addEventListener("click", function() {
   stageText.classList.add("fade-out");
