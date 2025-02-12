@@ -3,7 +3,7 @@ const stages = [
   "Desde el primer momento, aunque las circunstancias no eran fáciles, supimos que algo especial estaba naciendo entre nosotros.",
   "Por más atardeceres compartidos y lugares inolvidables. Cada instante a tu lado es un regalo.",
   "Cada estrella en el cielo y cada atardecer inmortalizado nos recuerda las veces que nos hemos dedicado el uno al otro.",
-  "Cada viaje juntos es una nueva aventura, llena de momentos inolvidables y anécdotas inesperadas.<br>Contigo, cada experiencia se convierte en una historia que vale la pena contar... o no.",
+  "Cada viaje juntos es una nueva aventura, llena de momentos inolvidables y anécdotas inesperadas. Contigo, cada experiencia se convierte en una historia que vale la pena contar... o no.",
   "¿Qué cabría esperar de un compañero de aventuras como yo? Bueno, tal vez alguien que disfruta de lo inesperado, como un fascinante acuario de medusas. Pero, no te preocupes, ¡también sé cuándo sorprenderte con algo menos raro!",
   "No me veo capaz de encontrar algo que ilumine más mi navidad que tú Copi.",
   "Me apoyas en lo que amo y, juntos, seguimos explorando nuevos horizontes, siempre con una sonrisa (y un tanque de oxígeno 🤿)",
