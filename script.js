@@ -52,9 +52,6 @@ continueBtn.addEventListener("click", function() {
   }, 800); // Un pequeño retraso para que primero desaparezcan las imágenes
   
   //setTimeout(() => {
-    // Elimina el efecto hover tras hacer clic
-    continueBtn.classList.remove("continue-btn");
-    setTimeout(() => continueBtn.classList.add("continue-btn"), 10);
     stageIndex++;
     if (stageIndex < stages.length - 1) {
       // 3. Cambiar las imágenes en el DOM
