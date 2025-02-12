@@ -46,9 +46,9 @@ continueBtn.addEventListener("click", function() {
     // 2. Luego ocultar el texto y el botón
     stageText.classList.add("fade-out");
     continueBtn.classList.add("fade-out");
-  }, 400); // Un pequeño retraso para que primero desaparezcan las imágenes
+  }, 800); // Un pequeño retraso para que primero desaparezcan las imágenes
   
-  setTimeout(() => {
+  //setTimeout(() => {
     // Elimina el efecto hover tras hacer clic
     continueBtn.classList.remove("continue-btn");
     setTimeout(() => continueBtn.classList.add("continue-btn"), 10);
@@ -66,13 +66,13 @@ continueBtn.addEventListener("click", function() {
         continueBtn.classList.remove("fade-out");
         stageText.classList.add("fade-in");
         continueBtn.classList.add("fade-in");
-      }, 400);
+      }, 600);
 
       // 6. Esperar antes de hacer aparecer las imágenes nuevas
       setTimeout(() => {
         photoContainer.classList.remove("fade-out");
         photoContainer.classList.add("fade-in");
-      }, 400); // Permitir que el texto aparezca antes de mostrar las fotos
+      }, 800); // Permitir que el texto aparezca antes de mostrar las fotos
       
     } else {
       // Última pantalla con la pregunta final
@@ -111,10 +111,12 @@ continueBtn.addEventListener("click", function() {
         document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
       });
     }
-  }, 800);
+  //}, 800);
   
   // Eliminar fade-in para prepararse para la siguiente aparición
-  stageText.classList.remove("fade-in");
-  photoContainer.classList.remove("fade-in");
-  continueBtn.classList.remove("fade-in");
+  setTimeout(() => {
+    stageText.classList.remove("fade-in");
+    photoContainer.classList.remove("fade-in");
+    continueBtn.classList.remove("fade-in");
+  }, 800);
 });
