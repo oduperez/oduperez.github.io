@@ -90,7 +90,7 @@ body {
 .fade-out {
 	opacity: 0;
 	transform: scale(0.8);
-	transition: opacity 1.2s, transform 1.2s;
+	transition: opacity 0.8s, transform 0.8s;
 }
 .fade-in {
 	opacity: 1;
