@@ -9,6 +9,36 @@ body {
         text-align: center;
         flex-direction: column;
 }
+
+/* Estilos para la pantalla de inicio */
+#login-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+#profile-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+#start-text {
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Estilos para el contenido de la historia */
+#story-content {
+    display: none;
+}
 .text-box {
         background: rgba(255, 255, 255, 0.8);
         padding: 15px;
