@@ -101,8 +101,10 @@ continueBtn.addEventListener("click", function() {
           noBtn.classList.add("bad-btn");
         }else if(noClickCount == 5){
           alert('Pero a que juegas nena...!?🤬')
-        }else if(noClickCount > 5){
+        }else if(noClickCount == 6){
           alert('Yo tampoco quería en realidad...😒')
+        }else if(noClickCount == 7){
+          alert('En fin... pues ahora pagas tú la cena!')
         }
         noBtn.style.left = Math.random() * 50 + "%";
         noBtn.style.top = Math.random() * 50 + "%";
