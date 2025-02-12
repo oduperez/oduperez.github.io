@@ -51,7 +51,7 @@ continueBtn.addEventListener("click", function() {
     continueBtn.classList.add("fade-out");
   }, 800); // Un pequeño retraso para que primero desaparezcan las imágenes
   
-  //setTimeout(() => {
+  setTimeout(() => {
     stageIndex++;
     if (stageIndex < stages.length - 1) {
       // 3. Cambiar las imágenes en el DOM
@@ -72,7 +72,7 @@ continueBtn.addEventListener("click", function() {
       setTimeout(() => {
         photoContainer.classList.remove("fade-out");
         photoContainer.classList.add("fade-in");
-      }, 800); // Permitir que el texto aparezca antes de mostrar las fotos
+      }, 400); // Permitir que el texto aparezca antes de mostrar las fotos
       
     } else {
       // Última pantalla con la pregunta final
@@ -111,5 +111,5 @@ continueBtn.addEventListener("click", function() {
         document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
       });
     }
-  //}, 800);    
+  }, 500);    
 });
