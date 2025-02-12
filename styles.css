@@ -1,6 +1,5 @@
 body {
         margin: 0;
-	overflow: hidden; /* Evita el scroll */
         display: flex;
         justify-content: center;
         align-items: center;
