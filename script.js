@@ -65,12 +65,12 @@ continueBtn.addEventListener("click", function() {
         if (noClickCount >= 2) {
           noBtn.textContent = "No 😠";
           noBtn.style.position = "absolute";
-          noBtn.style.left = Math.random() * maxX + "px";
-          noBtn.style.top = Math.random() * maxY + "px";
+          noBtn.style.left = Math.min(Math.random() * maxX, maxX - 10) + "px";
+          noBtn.style.top = Math.min(Math.random() * maxY, maxY - 10) + "px";
         }
         noBtn.style.position = "absolute";
-        noBtn.style.left = Math.random() * maxX + "px";
-        noBtn.style.top = Math.random() * maxY + "px";
+        noBtn.style.left = Math.min(Math.random() * maxX, maxX - 10) + "px";
+        noBtn.style.top = Math.min(Math.random() * maxY, maxY - 10) + "px";
       });
 
       yesBtn.addEventListener("click", function() {
