@@ -1,8 +1,8 @@
 const stages = [
   //"No sabes lo feliz que me hace estar aquí contigo esta noche.",
-  "Dicen que las casualidades no existen...<br>Dicen que el destino está escrito...<br>Dicen que los inicios nunca fueron fáciles",
-  "Déjame decirte... Hoy estás espectacular, pero es que lo eres cada día.",
+  "Nuestros inicios no fueron los más sencillos...<br>Cada plan que organizamos nos estrechó las distancias",
   "Gracias por compartir estos meses conmigo, cada momento es único.",
+  "Cada estrella en el cielo y cada atardecer inmortalizado nos recuerda las veces que nos hemos dedicado uno al otro.",
   "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
   "Y pensar en todo lo que nos espera... ¡Va a ser increíble! 😉.",
   "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
@@ -12,8 +12,8 @@ const stages = [
 
 const images = [
   ["img/graduacion.jpeg", "img/playa.jpeg"],           // GRADUACION + PLAYA
-  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],   // PAISAJES
   ["img/IMG_8100.jpeg", "img/IMG_7360.jpeg"],          // SETAS + HELADERIA
+  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],   // PAISAJES
   ["img/IMG_8039.jpeg", "img/multa.jpeg"],             // ANIMAL + MULTA
   ["img/medusas.jpeg", "img/yo_cenando.jpeg"],         // MEDUSA + YO
   ["img/IMG_8304.jpeg", "img/cena_sushi.jpeg"],        // NAVIDAD
