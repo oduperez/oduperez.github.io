@@ -109,8 +109,19 @@ continueBtn.addEventListener("click", function() {
       });
 
       yesBtn.addEventListener("click", function() {
-        document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
+         document.body.innerHTML = `
+         <div id="fireworks-container"></div>
+         <h1 style='color: white; text-align: center;'>¡Sabía que dirías que sí! ❤️</h1>
+         `;
+         // Llamada a la función para iniciar los fuegos artificiales
+         startFireworks();
       });
+      
+      function startFireworks() {
+         // Aquí puedes incluir o crear la animación de fuegos artificiales
+         const container = document.getElementById("fireworks-container");
+         container.innerHTML = '<div class="fireworks"></div>'; // Esto debería ser parte del CSS
+      }
     }
   }, 1000);    
 });
