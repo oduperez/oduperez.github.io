@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
         
 continueBtn.addEventListener("click", function() {
+  continueBtn.blur();
   // 1. Ocultar solo las imágenes primero
   photoContainer.classList.add("fade-out");
 
