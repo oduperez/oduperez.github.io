@@ -19,7 +19,7 @@ body {
 }
 #profile-pic {
     width: 120px;
-    height: 120px;
+    height: 150px;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
