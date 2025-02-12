@@ -59,18 +59,15 @@ continueBtn.addEventListener("click", function() {
 
       noBtn.addEventListener("click", function() {
         noClickCount++;
-        // Asegurar que el botón se mueva dentro de la ventana del navegador
-        let maxX = window.innerWidth - noBtn.offsetWidth; // Evita que se salga de la pantalla en ancho
-        let maxY = window.innerHeight - noBtn.offsetHeight; // Evita que se salga de la pantalla en alto
         if (noClickCount >= 2) {
           noBtn.textContent = "No 😠";
           noBtn.style.position = "absolute";
-          noBtn.style.left = Math.min(Math.random() * maxX, maxX - 10) + "px";
-          noBtn.style.top = Math.min(Math.random() * maxY, maxY - 10) + "px";
+          noBtn.style.left = Math.random() * 50 + "%";
+          noBtn.style.top = Math.random() * 50 + "%";
         }
         noBtn.style.position = "absolute";
-        noBtn.style.left = Math.min(Math.random() * maxX, maxX - 10) + "px";
-        noBtn.style.top = Math.min(Math.random() * maxY, maxY - 10) + "px";
+        noBtn.style.left = Math.random() * 50 + "%";
+        noBtn.style.top = Math.random() * 50 + "%";
       });
 
       yesBtn.addEventListener("click", function() {
