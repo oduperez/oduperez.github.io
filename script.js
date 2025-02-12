@@ -77,7 +77,7 @@ continueBtn.addEventListener("click", function() {
         document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
       });
     }
-  }, 1500);
+  }, 500);
   stageText.classList.remove("fade-in");
   photoContainer.classList.remove("fade-in");
   continueBtn.classList.remove("fade-in");
