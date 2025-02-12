@@ -1,6 +1,6 @@
 const stages = [
   //"No sabes lo feliz que me hace estar aquí contigo esta noche.",
-  "En la simplicidad de pequeños momentos y detalles, encontramos nuestra magia. Cada estrella en el cielo y cada atardecer inmortalizado nos recuerda las veces que nos hemos dedicado uno al otro.<br>Gracias por llenar mi vida de luz con cada gesto y cada recuerdo compartido.",
+  "Dicen que las casualidades no existen...<br>Dicen que el destino está escrito...<br>Dicen que los inicios nunca fueron fáciles",
   "Déjame decirte... Hoy estás espectacular, pero es que lo eres cada día.",
   "Gracias por compartir estos meses conmigo, cada momento es único.",
   "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
@@ -11,13 +11,13 @@ const stages = [
 ];
 
 const images = [
-  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],   // PAISAJES
-  ["img/IMG_8039.jpeg", "img/multa.jpeg"],             // ANIMAL + MULTA
   ["img/graduacion.jpeg", "img/playa.jpeg"],           // GRADUACION + PLAYA
-  ["img/medusas.jpeg", "img/yo_cenando.jpeg"],         // MEDUSA + YO
+  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],   // PAISAJES
   ["img/IMG_8100.jpeg", "img/IMG_7360.jpeg"],          // SETAS + HELADERIA
-  ["img/torneo_juntos.jpeg", "img/rio.jpeg"],          // HOBBIES
+  ["img/IMG_8039.jpeg", "img/multa.jpeg"],             // ANIMAL + MULTA
+  ["img/medusas.jpeg", "img/yo_cenando.jpeg"],         // MEDUSA + YO
   ["img/IMG_8304.jpeg", "img/cena_sushi.jpeg"],        // NAVIDAD
+  ["img/torneo_juntos.jpeg", "img/rio.jpeg"],          // HOBBIES
   []
 ];
 
