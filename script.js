@@ -56,12 +56,14 @@ continueBtn.addEventListener("click", function() {
       
       // 4. Cambiar el texto en el DOM
       stageText.textContent = stages[stageIndex];
-      
-      // 5. Mostrar el nuevo texto y botón
-      stageText.classList.remove("fade-out");
-      continueBtn.classList.remove("fade-out");
-      stageText.classList.add("fade-in");
-      continueBtn.classList.add("fade-in");
+
+      setTimeout(() => {
+        // 5. Mostrar el nuevo texto y botón
+        stageText.classList.remove("fade-out");
+        continueBtn.classList.remove("fade-out");
+        stageText.classList.add("fade-in");
+        continueBtn.classList.add("fade-in");
+      }, 400);
 
       // 6. Esperar antes de hacer aparecer las imágenes nuevas
       setTimeout(() => {
@@ -106,7 +108,7 @@ continueBtn.addEventListener("click", function() {
         document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
       });
     }
-  }, 500);
+  }, 800);
   
   // Eliminar fade-in para prepararse para la siguiente aparición
   stageText.classList.remove("fade-in");
