@@ -70,7 +70,7 @@ continueBtn.addEventListener("click", function() {
       setTimeout(() => {
         photoContainer.classList.remove("fade-out");
         photoContainer.classList.add("fade-in");
-      }, 400); // Permitir que el texto aparezca antes de mostrar las fotos
+      }, 800); // Permitir que el texto aparezca antes de mostrar las fotos
       
     } else {
       // Última pantalla con la pregunta final
@@ -109,5 +109,5 @@ continueBtn.addEventListener("click", function() {
         document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
       });
     }
-  }, 2000);    
+  }, 1000);    
 });
