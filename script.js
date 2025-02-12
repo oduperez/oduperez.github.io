@@ -58,10 +58,12 @@ continueBtn.addEventListener("click", function() {
       stageText.textContent = stages[stageIndex];
       
       // 5. Mostrar el nuevo texto y botón
-      stageText.classList.remove("fade-out");
-      continueBtn.classList.remove("fade-out");
-      stageText.classList.add("fade-in");
-      continueBtn.classList.add("fade-in");
+      setTimeout(() => {
+        stageText.classList.remove("fade-out");
+        continueBtn.classList.remove("fade-out");
+        stageText.classList.add("fade-in");
+        continueBtn.classList.add("fade-in");
+      }, 500);
 
       // 6. Esperar antes de hacer aparecer las imágenes nuevas
       setTimeout(() => {
