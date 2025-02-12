@@ -72,7 +72,7 @@ body {
 }
 .photos img {
 	width: 100%;  /* Ajusta el ancho al contenedor */
-        max-width: 300px; /* Establece un ancho máximo */
+        max-width: 120px; /* Establece un ancho máximo */
 	aspect-ratio: 4 / 5; /* Mantiene el formato 4:5 */
 	object-fit: cover; /* Evita distorsión y recorta si es necesario */
 	border-radius: 20px;
