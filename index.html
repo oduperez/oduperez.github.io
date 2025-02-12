@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="text-box" id="stage-text">No sabes lo feliz que me hace estar aquí contigo esta noche.</div>
-    <button id="continue-btn" class="continue-btn">CONTINUAR</button>
-    <div class="photos" id="photo-container">
-        <img src="img/paisaje_mio.jpeg" alt="Foto 1">
-        <img src="img/yo_cenando.jpeg" alt="Foto 2">
+    <!-- Pantalla de inicio de sesión -->
+    <div id="login-screen">
+        <img src="img/ella.jpeg" alt="Perfil" id="profile-pic">
+        <h2 id="profile-name">Andrea</h2>
+        <p id="start-text">Pulsa sobre tu perfil para iniciar la aventura</p>
+    </div>
+
+    <!-- Contenido de la historia (oculto al inicio) -->
+    <div id="story-content" style="display: none;">
+        <div class="text-box" id="stage-text">No sabes lo feliz que me hace estar aquí contigo esta noche.</div>
+        <button id="continue-btn" class="continue-btn">CONTINUAR</button>
+        <div class="photos" id="photo-container">
+            <img src="img/paisaje_mio.jpeg" alt="Foto 1">
+            <img src="img/yo_cenando.jpeg" alt="Foto 2">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
