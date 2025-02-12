@@ -14,9 +14,9 @@ const images = [
   ["img/IMG_8039.jpeg", "img/medusas.jpeg"],
   ["img/graduacion.jpeg", "img/playa.jpeg"],
   ["img/multa.jpeg", "img/yo_cenando.jpeg"],
-  ["img/setas_sevilla.jpeg", "img/terraza_heladeria.jpeg"],
+  ["img/IMG_8100.jpeg", "img/IMG_7360.jpeg"],
   ["img/torneo_juntos.jpeg", "img/rio.jpeg"],
-  ["img/navidad.jpeg", "img/cena_sushi.jpeg"],
+  ["img/IMG_8304.jpeg", "img/cena_sushi.jpeg"],
   []
 ];
 
