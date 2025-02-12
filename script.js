@@ -47,24 +47,7 @@ continueBtn.addEventListener("click", function() {
     stageIndex++;
     if (stageIndex < stages.length - 1) {
       stageText.textContent = stages[stageIndex];
-      
-      // Crear nuevas imágenes en memoria antes de mostrarlas
-      let newImages = images[stageIndex].map(src => {
-        let img = new Image();
-        img.src = src;
-        img.classList.add("hidden-img"); // Ocultar imágenes al inicio
-        return img;
-      });
-      // Vaciar el contenedor de fotos sin eliminar su tamaño
-      photoContainer.innerHTML = "";
-      // Agregar las imágenes precargadas al DOM
-      newImages.forEach(img => photoContainer.appendChild(img));
-      // Esperar un poco antes de mostrarlas suavemente
-      setTimeout(() => {
-        newImages.forEach(img => img.classList.remove("hidden-img"));
-      }, 100); // Pequeño retraso para suavizar la transición
-
-      // Restaurar visibilidad
+      photoContainer.innerHTML = images[stageIndex].map(src => `<img src="${src}" alt="Foto">`).join("");
       stageText.classList.remove("fade-out");
       photoContainer.classList.remove("fade-out");
       continueBtn.classList.remove("fade-out");
@@ -83,8 +66,6 @@ continueBtn.addEventListener("click", function() {
         <button id="no-btn">No</button>
         </div>
       `;
-      // Oculto el div de las fotos
-      photoContainer.style.display = "none";
       stageText.classList.add("fade-in");
       // Ahora que los botones existen en el DOM, añadimos los eventos
       const noBtn = document.getElementById("no-btn");
