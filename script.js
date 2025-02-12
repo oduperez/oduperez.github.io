@@ -94,13 +94,15 @@ continueBtn.addEventListener("click", function() {
 
       noBtn.addEventListener("click", function() {
         noClickCount++;
-        if (noClickCount >= 2) {
-          noBtn.textContent = "No 😠";
-          noBtn.style.position = "absolute";
-          noBtn.style.left = Math.random() * 50 + "%";
-          noBtn.style.top = Math.random() * 50 + "%";
-        }
         noBtn.style.position = "absolute";
+        if ((noClickCount >= 2) && (noClickCount <= 4)) {
+          noBtn.textContent = "No 😠";
+          noBtn.classList.add("bad-btn");
+        }if else(noClickCount > 4){
+          alert('Pero a que juegas nena...!?🤬')
+        }if else(noClickCount > 6){
+          alert('Yo tampoco quería en realidad...😒')
+        }
         noBtn.style.left = Math.random() * 50 + "%";
         noBtn.style.top = Math.random() * 50 + "%";
       });
