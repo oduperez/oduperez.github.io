@@ -39,23 +39,41 @@ document.addEventListener("DOMContentLoaded", function() {
 });
         
 continueBtn.addEventListener("click", function() {
-  stageText.classList.add("fade-out");
+  // 1. Ocultar solo las imágenes primero
   photoContainer.classList.add("fade-out");
-  continueBtn.classList.add("fade-out");
+
+  setTimeout(() => {
+    // 2. Luego ocultar el texto y el botón
+    stageText.classList.add("fade-out");
+    continueBtn.classList.add("fade-out");
+  }, 400); // Un pequeño retraso para que primero desaparezcan las imágenes
 
   setTimeout(() => {
     stageIndex++;
     if (stageIndex < stages.length - 1) {
-      stageText.textContent = stages[stageIndex];
+      // 3. Cambiar las imágenes en el DOM
       photoContainer.innerHTML = images[stageIndex].map(src => `<img src="${src}" alt="Foto">`).join("");
+      
+      // 4. Cambiar el texto en el DOM
+      stageText.textContent = stages[stageIndex];
+      
+      // 5. Mostrar el nuevo texto y botón
       stageText.classList.remove("fade-out");
-      photoContainer.classList.remove("fade-out");
       continueBtn.classList.remove("fade-out");
       stageText.classList.add("fade-in");
-      photoContainer.classList.add("fade-in");
       continueBtn.classList.add("fade-in");
+
+      // 6. Esperar antes de hacer aparecer las imágenes nuevas
+      setTimeout(() => {
+        //document.querySelectorAll(".hidden-img").forEach(img => img.classList.remove("hidden-img"));
+        photoContainer.classList.remove("fade-out");
+        photoContainer.classList.add("fade-in");
+      }, 500); // Permitir que el texto aparezca antes de mostrar las fotos
+      
     } else {
+      // Última pantalla con la pregunta final
       continueBtn.style.display = "none"; // Ocultar botón continuar
+      photoContainer.style.display = "none"; // Ocultar div imágenes
       stageText.classList.remove("fade-out");
       photoContainer.classList.remove("fade-out");
       continueBtn.classList.remove("fade-out");
@@ -89,7 +107,9 @@ continueBtn.addEventListener("click", function() {
         document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
       });
     }
-  }, 500);
+  }, 800);
+  
+  // Eliminar fade-in para prepararse para la siguiente aparición
   stageText.classList.remove("fade-in");
   photoContainer.classList.remove("fade-in");
   continueBtn.classList.remove("fade-in");
