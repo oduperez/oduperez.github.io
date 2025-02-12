@@ -1,12 +1,12 @@
 const stages = [
   //"No sabes lo feliz que me hace estar aquí contigo esta noche.",
-  "Nuestros inicios no fueron los más sencillos...<br>Cada plan que organizamos nos estrechó las distancias",
-  "Gracias por compartir estos meses conmigo, cada momento es único.",
+  "Desde el primer momento, aunque las circunstancias no eran fáciles, supimos que algo especial estaba naciendo entre nosotros, incluso cuando el destino aún no nos permitía estar juntos.",
+  "Por más atardeceres compartidos y lugares inolvidables. Cada instante a tu lado es un regalo.",
   "Cada estrella en el cielo y cada atardecer inmortalizado nos recuerda las veces que nos hemos dedicado uno al otro.",
-  "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
-  "Y pensar en todo lo que nos espera... ¡Va a ser increíble! 😉.",
-  "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
-  "Después de todo esto, hay algo que quiero preguntarte de corazón...",
+  "Cada viaje juntos es una nueva aventura, llena de momentos inolvidables y anécdotas inesperadas.<br>Contigo, cada experiencia se convierte en una historia que vale la pena contar... o no.",
+  "¿Qué cabría esperar de un compañero de aventuras como yo? Bueno, tal vez alguien que disfruta de lo inesperado, como un fascinante acuario de medusas. Pero, no te preocupes, ¡también sé cuándo sorprenderte con algo menos raro!",
+  "No me veo capaz de encontrar algo que ilumine más mi navidad que tú Copi.",
+  "Me apoyas en lo que amo y, juntos, seguimos explorando nuevos horizontes, siempre con una sonrisa (y un tanque de oxígeno 🤿)",
   "Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?"
 ];
 
