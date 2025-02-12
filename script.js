@@ -4,17 +4,19 @@ const stages = [
   "Gracias por compartir estos meses conmigo, cada momento es único.",
   "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
   "Y pensar en todo lo que nos espera... ¡Va a ser increíble! 😉.",
+  "No puedo evitar sonreír al recordar todos los planes que hemos vivido.",
   "Después de todo esto, hay algo que quiero preguntarte de corazón...",
   "Después de una rigurosa evaluación y con el 100% de mi amor confirmado... 😏 ¿Quieres ser mi novia?"
 ];
 
 const images = [
-  ["img/paisaje_mio.jpeg", "img/yo_cenando.jpeg"],
-  ["img/foto_3.jpg", "img/foto_4.jpg"],
-  ["img/foto_5.jpg", "img/foto_6.jpg"],
-  ["img/foto_7.jpg", "img/foto_8.jpg"],
-  ["img/foto_9.jpg", "img/foto_10.jpg"],
-  ["img/foto_11.jpg", "img/foto_12.jpg"],
+  ["img/multa.jpeg", "img/yo_cenando.jpeg"],
+  ["img/animal.jpeg", "img/medusas.jpeg"],
+  ["img/graduacion.jpeg", "img/playa.jpeg"],
+  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],
+  ["img/setas_sevilla.jpeg", "img/terraza_heladeria.jpeg"],
+  ["img/torneo_juntos.jpeg", "img/rio.jpeg"],
+  ["img/navidad.jpeg", "img/cena_sushi.jpeg"],
   []
 ];
 
