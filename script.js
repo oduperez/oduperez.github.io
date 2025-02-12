@@ -46,7 +46,7 @@ continueBtn.addEventListener("click", function() {
     // 2. Luego ocultar el texto y el botón
     stageText.classList.add("fade-out");
     continueBtn.classList.add("fade-out");
-  }, 600); // Un pequeño retraso para que primero desaparezcan las imágenes
+  }, 200); // Un pequeño retraso para que primero desaparezcan las imágenes
 
   setTimeout(() => {
     stageIndex++;
@@ -68,7 +68,7 @@ continueBtn.addEventListener("click", function() {
         //document.querySelectorAll(".hidden-img").forEach(img => img.classList.remove("hidden-img"));
         photoContainer.classList.remove("fade-out");
         photoContainer.classList.add("fade-in");
-      }, 500); // Permitir que el texto aparezca antes de mostrar las fotos
+      }, 300); // Permitir que el texto aparezca antes de mostrar las fotos
       
     } else {
       // Última pantalla con la pregunta final
@@ -107,7 +107,7 @@ continueBtn.addEventListener("click", function() {
         document.body.innerHTML = `<h1 style='color: white;'>¡Sabía que dirías que sí! ❤️</h1>`;
       });
     }
-  }, 800);
+  }, 500);
   
   // Eliminar fade-in para prepararse para la siguiente aparición
   stageText.classList.remove("fade-in");
