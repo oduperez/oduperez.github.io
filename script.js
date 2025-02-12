@@ -9,7 +9,7 @@ const stages = [
 ];
 
 const images = [
-  ["img/foto_1.jpg", "img/foto_2.jpg"],
+  ["img/paisaje_mio.jpeg", "img/yo_cenando.jpeg"],
   ["img/foto_3.jpg", "img/foto_4.jpg"],
   ["img/foto_5.jpg", "img/foto_6.jpg"],
   ["img/foto_7.jpg", "img/foto_8.jpg"],
