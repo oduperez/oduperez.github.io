@@ -42,22 +42,23 @@ body {
 .text-box {
         background: rgba(255, 255, 255, 0.8);
         padding: 15px;
-        border-radius: 15px;
+        border-radius: 20px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         max-width: 70%;
-        margin-bottom: 15px;
-        font-size: 1.2em;
+        margin-bottom: 25px;
+        font-size: 1.3em;
         font-weight: bold;
 }
 .continue-btn, #yes-btn, #no-btn {
-        padding: 12px 25px;
+        padding: 14px 30px;
         border: none;
-        border-radius: 15px;
+        border-radius: 20px;
         cursor: pointer;
         font-size: 18px;
         background: #ff758c;
         color: white;
-        margin-top: 20px;
+        margin-top: 25px; /* Más espacio sobre el botón */
+        margin-bottom: 30px; /* Más espacio bajo el botón */
         transition: transform 0.2s, background 0.2s;
 }
 .continue-btn:hover, .yes-btn:hover, .no-btn:hover {
@@ -66,13 +67,13 @@ body {
 }
 .photos {
 	display: flex;
-	gap: 15px;
+	gap: 20px;
 	justify-content: center;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 .photos img {
 	width: 100%;  /* Ajusta el ancho al contenedor */
-        max-width: 120px; /* Establece un ancho máximo */
+        max-width: 130px; /* Establece un ancho máximo */
 	aspect-ratio: 4 / 5; /* Mantiene el formato 4:5 */
 	object-fit: cover; /* Evita distorsión y recorta si es necesario */
 	border-radius: 20px;
