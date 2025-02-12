@@ -113,7 +113,7 @@ continueBtn.addEventListener("click", function() {
       yesBtn.addEventListener("click", function() {
          document.body.innerHTML = `
          <div id="fireworks-container"></div>
-         <h1 style='color: white; text-align: center;'>¡Sabía que dirías que sí! ❤️</h1>
+         <h1 class="message">¡Sabía que dirías que sí! 🩵</h1>
          `;
          // Llamada a la función para iniciar los fuegos artificiales
          startFireworks();
