@@ -10,10 +10,10 @@ const stages = [
 ];
 
 const images = [
-  ["img/multa.jpeg", "img/yo_cenando.jpeg"],
+  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],
   ["img/animal.jpeg", "img/medusas.jpeg"],
   ["img/graduacion.jpeg", "img/playa.jpeg"],
-  ["img/paisaje_ella.jpeg", "img/paisaje_mio.jpeg"],
+  ["img/multa.jpeg", "img/yo_cenando.jpeg"],
   ["img/setas_sevilla.jpeg", "img/terraza_heladeria.jpeg"],
   ["img/torneo_juntos.jpeg", "img/rio.jpeg"],
   ["img/navidad.jpeg", "img/cena_sushi.jpeg"],
